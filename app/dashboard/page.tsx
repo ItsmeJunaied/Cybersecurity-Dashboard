@@ -118,7 +118,7 @@ export default function DashboardPage() {
           <TabsTrigger value="overview" className="data-[state=active]:bg-[#41644A] data-[state=active]:text-white">
             Overview
           </TabsTrigger>
-          <TabsTrigger value="threats" className="data-[state=active]:bg-[#41644A] data-[state=active]:text-white">
+          {/* <TabsTrigger value="threats" className="data-[state=active]:bg-[#41644A] data-[state=active]:text-white">
             Threats
           </TabsTrigger>
           <TabsTrigger
@@ -126,7 +126,7 @@ export default function DashboardPage() {
             className="data-[state=active]:bg-[#41644A] data-[state=active]:text-white"
           >
             Vulnerabilities
-          </TabsTrigger>
+          </TabsTrigger> */}
           <TabsTrigger value="systems" className="data-[state=active]:bg-[#41644A] data-[state=active]:text-white">
             Systems
           </TabsTrigger>
@@ -180,7 +180,7 @@ export default function DashboardPage() {
               <CardDescription>Breakdown of threats by category</CardDescription>
             </CardHeader>
             <CardContent className="px-2">
-              <VulnerabilityScoreChart />
+              <VulnerabilityScoreChart data={[]} />
             </CardContent>
           </Card>
         </TabsContent>
@@ -191,7 +191,7 @@ export default function DashboardPage() {
               <CardDescription>System vulnerability scores</CardDescription>
             </CardHeader>
             <CardContent className="px-2">
-              <VulnerabilityScoreChart />
+              <VulnerabilityScoreChart data={[]} />
             </CardContent>
           </Card>
         </TabsContent>
